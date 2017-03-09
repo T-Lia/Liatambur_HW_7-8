@@ -35,11 +35,11 @@ $(function() {
 
 $(function() {
 
-  var $inputForm = $('.form input');
+  var $inputForm = $('.input');
 
   $inputForm.on('hover', function() {
     $(this).attr('title');
-  });
+  }, 'fast');
 
 
 
