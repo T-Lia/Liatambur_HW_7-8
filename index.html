@@ -5,47 +5,45 @@
 	<title>TABS AND FORMS</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
 	<script src="js/script.js"></script>
-	
 </head>
 <body>
 
 	<div class="wrapper">
-
-		<ul class="tab_menu">
-			<li class="active">Tab_1</li>
-			<li>Tab_2</li>
-			<li>Tab_3</li>			
+		<ul class="tabs">
+			<li class="tabs_menu"><a href="#tab1" class="tabs_link">Registration</a></li>
+			<li class="tabs_menu"><a href="#tab2" class="tabs_link">Navigation</a></li>
+			<li class="tabs_menu"><a href="#tab3" class="tabs_link">About us</a></li>
 		</ul>
 
-		<div class="tab_content">
+		<div class="tab_container">
 
-			<div>
-				<form>
-				    <div class="form">
-				      <label for="firstname">Firstname</label>
-				      <input class="form_input" id="firstname" name="firstname" title="Please provide your firstname.">
-				    </div>
-				    <div class="form">
-				      <label for="lastname">Lastname</label>
-				      <input class="form_input" id="lastname" name="lastname" title="Please provide also your lastname.">
-				    </div>
-				    <div class="form">
-				      <label for="address">Address</label>
-				      <input class="form_input" id="address" name="address" title="Your home or work address.">
-				    </div>
-				    <button class="show_botton">Show help!</button>
-				  </form>
-			  </div>
+			<!-- <div id="tab1" class="tab_content">Registration form</div> -->
+			<div id="tab1" class = "tab_content">
+			    <div class="form_item">
+			      <label for="firstname">Firstname</label>
+			      <input class="form_input" id="firstname" name="firstname" title="Please provide your firstname.">
+			    </div>
+			    <div class="form_item">
+			      <label for="lastname">Lastname</label>
+			      <input class="form_input" id="lastname" name="lastname" title="Please provide also your lastname.">
+			    </div>
+			    <div class="form_item">
+			      <label for="address">Address</label>
+			      <input class="form_input" id="address" name="address" title="Your home or work address.">
+			    </div>
+			    <button class="show_botton">Show help!</button>
+			</div>
 
-			<div>Second content</div>
-			<div>Third content</div>
+			<div id="tab2" class="tab_content">Website navigation</div>
+
+			<div id="tab3" class="tab_content">Information about our company</div>	
+
 		</div>
-		
-
 	</div>
+
+	
 
 </body>
 </html>
